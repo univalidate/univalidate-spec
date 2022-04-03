@@ -1,7 +1,7 @@
 # Universal Validation Specification
 
 **Univalidate** is a specification with the goal of **standardizing 
-validation** by creating a **language agnostic** validation solution.
+validation** by creating a **language agnostic** validation schema.
 This solves the problem of validation functioning differently between 
 the frontend and backend of a system.
 
