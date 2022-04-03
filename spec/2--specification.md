@@ -91,4 +91,32 @@ validation: (1)
 6. A second validator property.
 7. The value of the second validator property.
 
+### Shorthand syntax
+
+If a property only has a `value` sub-property, or all of the other sub-properties
+are optional, then a shorthand syntax can be used:
+
+```yaml
+validation:
+  age:
+    min: 18
+    max: 65
+```
+
+### Templating
+ 
+In validation messages, templating can be used to allow for more robust
+validation schemas, a template uses the `{curly brace}` syntax. A templated
+message can access other properties from its validator.
+
+```yaml
+validation:
+  name:
+    length:
+      min: 2
+      message: Your name must be longer than {min} characters.
+```
+
+In the above example, the validation failure message would be: `Your name must be longer than 2 characters.`
+
 [Next - Validation](./3--validation.md)

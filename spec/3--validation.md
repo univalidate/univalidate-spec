@@ -31,10 +31,8 @@ Used to validate the length of a string of text.
 validation:
   addressLine1:
     length:
-      min:
-        value: 8
-      max:
-        value: 64
+      min: 8
+      max: 64
 ```
 
 
@@ -64,4 +62,18 @@ validation:
     max:
       value: 1000
       message: You can not send more than £1000 in one transaction.
+```
+
+### pattern
+Specifies a [Regular Expression](https://github.com/topics/regex) to match this string against.
+
+- value: The regular expression.
+- message: The message to be displayed if this validation rule fails.
+
+```yaml
+validation:
+  domainName:
+    pattern:
+      value: /(?:www\.)?(\w+)\.(com|net|co\.uk)/i
+      message: Must specify a valid domain name.
 ```
