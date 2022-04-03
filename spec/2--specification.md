@@ -1,21 +1,22 @@
 # Specification
 
 ### Goal
-The main goal of Univalidate is to streamline and consolidate validation of data.
+The main goal of Univalidate is to streamline and consolidate validation of data by creating a
+schema which can evaluated equivalently in any environment.
 
 ### Data Structure
-This specification does not mandate any particular structure for the validation data, however it
+This specification does not mandate any particular structure for the validation schema, however it
 does make some recommendations:
 
-- If the end user is going to creating the specification manually, use a language like [YAML](https://github.com/yaml/yaml-spec).
+- If the end user is going to create the schema manually, use a language like [YAML](https://github.com/yaml/yaml-spec).
 - If the data is being transferred over HTTP, use [JSON](https://github.com/topics/json).
-- Frameworks could also abstract out the creation of this data.
+- Frameworks can also abstract the creation of the schema.
 
 #### Example
 
 All examples are given in YAML format.
 
-```yml
+```yaml
 validation:
   name:
     required:
@@ -105,7 +106,7 @@ validation:
 
 ### Templating
  
-In validation messages, templating can be used to allow for more robust
+In validation messages, templating can be used for more robust
 validation schemas, a template uses the `{curly brace}` syntax. A templated
 message can access other properties from its validator.
 
@@ -119,4 +120,4 @@ validation:
 
 In the above example, the validation failure message would be: `Your name must be longer than 2 characters.`
 
-[Next - Validation](./3--validation.md)
+[Next - Validators](./3--validators.md)

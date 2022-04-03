@@ -13,8 +13,7 @@ as issues.
 
 1. [Introduction](spec/1--introduction.md)
 2. [Specification](spec/2--specification.md)
-3. [Validation](spec/3--validation.md)
-
+3. [Validators](spec/3--validators.md)
 
 ## TODO
 
