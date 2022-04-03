@@ -5,9 +5,8 @@ validation** by creating a **language agnostic** validation schema.
 This solves the problem of validation functioning differently between 
 the frontend and backend of a system.
 
-This specification is currently in alpha and is subject to change drastically
-in the near future. Any contributions are welcome and should be raised
-as issues.
+This specification is an early draft and is subject to change drastically
+in the near future. Any feature requests or error reports should be raised as issues.
 
 ## Contents
 
@@ -17,6 +16,7 @@ as issues.
 
 ## TODO
 
-- [ ] Complete basic specification structure
+- [ ] Complete basic specification structure.
 - [ ] Add information about contributions.
-- [ ] Add extra information about shorthand syntax 
+- [ ] Add extra information about shorthand syntax.
+- [ ] Add an emoji somewhere in the specification.
